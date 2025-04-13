@@ -1,0 +1,13 @@
+name: Build Success
+
+on:
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Step 1 - Say hello
+        run: echo "Hello from hw1-p"
+      - name: Step 2 - Simulate successful build
+        run: echo "Build completed successfully"
