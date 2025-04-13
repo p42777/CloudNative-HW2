@@ -1,0 +1,13 @@
+name: Build Fail
+
+on:
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Step 1 - Say hello
+        run: echo "Hello from hw1-f"
+      - name: Step 2 - Simulate failure
+        run: exit 1
